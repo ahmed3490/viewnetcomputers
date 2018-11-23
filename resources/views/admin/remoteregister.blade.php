@@ -1,8 +1,6 @@
+@extends('layouts.app')
 
-@extends('layouts.adminLayout.admin_design')
 @section('content')
-@include('layouts.adminLayout.menubar')
-
 <div class="main-content">
 <div class="container">
     <div class="row justify-content-center">
@@ -88,6 +86,8 @@
 
 
 </div>
+
+
 
 
 

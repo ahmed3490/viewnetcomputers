@@ -32,6 +32,12 @@ Route::POST('admin','Admin\LoginController@login');
 
 //Admin Registration
 Route::match(['get', 'post'],'admin/register','AdminController@register')->name('admin.register');
+
+Route::match(['get', 'post'],'remote','RemoteAdmin@register')->name('admin.remoteregister');
+
+
+
+
 Route::get('admin/resetPass','AdminController@showResetform');
 Route::post('admin/resetPass','AdminController@resetPass')->name('admin.resetPass');
 Route::POST('admin-password/email','Admin\ForgotPasswordController@sendResetLinkEmail ')->name('admin.password.email');
